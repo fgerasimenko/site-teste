@@ -1,0 +1,32 @@
+.collapse.navbar-collapse{
+    max-width: 600px;
+    float: right; 
+}
+
+#nav-site{
+    /* justify-content: center; */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    padding-bottom: 0px;
+}
+
+#nav-site .nav-item.nav-link{
+    padding: 1px;
+    color: #FFF;
+    width: 33%;
+    text-align: center;
+    border-radius: 0px;
+}
+
+#nav-site .nav-item.nav-link:hover{
+    background-color: #222;
+    
+}
+
+.active-pers{
+    background-color: #343A40;
+}
+.inactive-pers{
+    background-color: black;
+}

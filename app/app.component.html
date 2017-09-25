@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 content-justify-start">
+        <a class="navbar-brand" href="#">GOBIT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>  
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 content-justify-end">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="about">Quem nós somos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="contact">Contate-nos</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <nav id="nav-site" class="navbar nav-pills">
+        <a class="nav-item nav-link inactive-pers" routerLink="home" 
+            routerLinkActive="active-pers">Início</a>
+
+        <a class="nav-item nav-link" routerLink="contact" 
+            routerLinkActive="active-pers">Contact</a>
+
+        <a class="nav-item nav-link" routerLink="about" 
+            routerLinkActive="active-pers">About</a>
+
+    </nav>
+    <div data-spy="scroll" data-target="#nav-site" data-offset="0">
+        <home hidden></home> 
+        <contact hidden></contact>
+        <about hidden></about>
+    </div>
+</div>
+<router-outlet></router-outlet>
